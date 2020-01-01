@@ -1,0 +1,301 @@
+.index {
+  background-color: #eceff1;
+  .navbar {
+    position: relative;
+    padding: 0 2.5rem 0 1.8rem;
+    height: 55px;
+    background-color: #fff;
+    z-index: 500;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .logo {
+      display: block;
+      width: 5rem;
+      height: 3rem;
+      cursor: pointer;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("/logo.svg");
+    }
+    .search-input {
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      margin: 0 2.2rem 0 1rem;
+      height: 100%;
+      padding: 1rem 0;
+      input {
+        width: 50%;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0.5rem;
+        border: 1px solid #e6edf4;
+        border-radius: 2px;
+        background-color: #f1f5fa;
+      }
+    }
+  }
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    margin: 1.8rem 1.2rem 0 1.8rem;
+    overflow: hidden;
+    // background-color: #fff;
+    .type-select {
+      .ant-select-selection {
+        border: none;
+        align-items: center;
+        position: relative;
+        width: 8rem;
+        height: 2.5rem;
+        border-radius: 2px;
+        color: #646c7b;
+        background-color: #f8f9fb;
+        margin-left: 0.8rem;
+      }
+    }
+    .left-box {
+      flex: 0 0 auto;
+      width: 33.97rem;
+      .gold-header {
+        min-height: 3.5rem;
+        background-color: #fff;
+        border-radius: 2px;
+        z-index: 250;
+        margin: 0 0 1.2rem;
+        display: flex;
+        align-items: center;
+        margin-right: 0.8rem;
+        img {
+          width: 2.833rem;
+          height: 2.833rem;
+          border-radius: 2px;
+          margin: 0 1rem 0 0.4rem;
+        }
+        .title {
+          color: rgb(4, 74, 171);
+          margin: 0 1rem 0 0;
+          opacity: 1;
+          margin: 0 1rem 0 0.4rem;
+          font-size: 1.35rem;
+          font-family: Verdana, Geneva, Microsoft YaHei, Microsoft JhengHei,
+            Helvetica Neue, sans-serif;
+        }
+
+        .gold-order-radio {
+          margin-left: 100px;
+          label {
+            border: none;
+            padding: 0 8px;
+          }
+          .ant-radio-button-wrapper-disabled {
+            &:hover {
+              border: none;
+            }
+          }
+        }
+      }
+      .gold-list {
+        position: relative;
+        overflow-y: hidden;
+        padding-right: 0.8rem;
+        .gold-item {
+          display: flex;
+          padding: 0.4rem 1.25rem 0.4rem 0.4rem;
+          margin-bottom: 0.8rem;
+          background-color: #fff;
+          border-radius: 2px;
+          cursor: pointer;
+          .left-number {
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            width: 2.834rem;
+            height: 3.667rem;
+            border-radius: 2px;
+            transition: all 0.2s ease;
+            color: #e8f1ff;
+            background-color: #007fff;
+            overflow: hidden;
+          }
+          .right-content {
+            flex-grow: 1;
+            position: relative;
+            margin-left: 1.2rem;
+            height: 3.667rem;
+            min-width: 0;
+            cursor: pointer;
+            .title {
+              max-width: 100%;
+              font-size: 1.25rem;
+              line-height: 1.8;
+              color: #333;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .down-box {
+              display: flex;
+              font-size: 1rem;
+              line-height: 1;
+              color: #c2c5cd;
+              white-space: nowrap;
+              opacity: 0.8;
+              -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+              display: -ms-flexbox;
+              display: flex;
+              padding: 0;
+              min-width: 0;
+              overflow: hidden;
+              .meat-item {
+                flex: 0 0 auto;
+                margin-right: 1rem;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+    .right-box {
+      flex: 1 1 auto;
+      margin-left: 1.2rem;
+      .git-hub-left {
+        display: flex;
+        flex: 1 1 auto;
+        height: 3.5rem;
+        align-items: center;
+      }
+      .right-header {
+        display: flex;
+        align-items: center;
+        margin: 0 0 1.2rem;
+        min-height: 3.5rem;
+        background-color: #fff;
+        border-radius: 2px;
+        z-index: 250;
+        .icon-box {
+          display: flex;
+          align-items: center;
+          font-size: 1.35rem;
+          font-family: Verdana, Geneva, Microsoft YaHei, Microsoft JhengHei,
+            Helvetica Neue, sans-serif;
+          color: #333;
+          .git-hub {
+            font-size: 2.833rem;
+            margin: 0 1rem 0 0.4rem;
+          }
+          git-hub-text {
+            margin: 0 1rem 0 0;
+            opacity: 1;
+          }
+        }
+        .language {
+          // float: right;
+          flex: 0 0 auto;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -ms-flex-align: center;
+          align-items: center;
+          position: relative;
+          margin-left: 0.5rem;
+          height: 3.5rem;
+          font-size: 1.15rem;
+          color: #646c7b;
+          background-color: white;
+          .ant-select-selection {
+            background-color: white;
+          }
+        }
+      }
+      .git-hub-list {
+        .ant-list-items {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          position: relative;
+          padding-bottom: 6rem;
+          .git-hub-item {
+            display: flex;
+            width: calc((100% - 1.8rem * 1) / 2);
+            flex-direction: column;
+            margin: 0 0.8rem 0.8rem 0;
+            position: relative;
+            border-radius: 2px;
+            background-color: #fff;
+            padding: 24px 30px;
+            font-family: PingFang SC, -apple-system, Arial, Microsoft YaHei,
+              Microsoft JhengHei, Helvetica Neue, sans-serif;
+            box-sizing: border-box;
+            cursor: pointer;
+            .item-width {
+              width: 100%;
+            }
+            .title {
+              h2 {
+                color: #0366d6;
+              }
+            }
+            .content {
+              color: #2e3135;
+              font-size: 14px;
+              line-height: 20px;
+              height: 60px;
+
+              color: #333;
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              overflow: hidden;
+            }
+            .footer {
+              display: flex;
+              flex-direction: row;
+              margin-top: 15px;
+              font-size: 1.167rem;
+              font-weight: 700;
+              color: #666;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              .icon {
+                margin-right: 25px;
+              }
+              .language {
+                display: flex;
+                flex-direction: row;
+                .lang-dot {
+                  height: 12px;
+                  width: 12px;
+                  border-radius: 50%;
+                  margin: 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+html {
+  font-size: 12px;
+}
